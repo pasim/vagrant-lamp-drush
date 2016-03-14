@@ -9,3 +9,15 @@ You get everything you need;
 5. Provides full drush support.
 
 Tested for both Drupal8 and Drupal7
+
+Prerequesites
+
+1. https://www.vagrantup.com - vagrant
+2. ViruatlBox
+
+How to install?
+
+1. Clone this respository
+2. From the root folder execute "vagrant up"
+3. Make yourself a tea - build will take arround 10 minutes.
+4. Once finished navigate your brovser to http://drupal or extecute "vagrant ssh" from the project root.
