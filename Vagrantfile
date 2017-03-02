@@ -5,8 +5,8 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "ubuntu-14.04"
-  config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box"
+  config.vm.box = "ubuntu-15.04"
+  config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/vivid/current/vivid-server-cloudimg-amd64-vagrant-disk1.box"
   config.vm.network :private_network, ip: "192.168.56.20"
   config.vm.network :forwarded_port, guest: 22, host: 2022, auto_correct: true
   config.vm.synced_folder "sites/drupal", "/var/www/html/drupal", :nfs => true
